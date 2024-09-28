@@ -1,8 +1,8 @@
 module "ec2" {
-    source = "./modules/ec2"
+    source = "../modules/ec2"
     region = "us-east-1"
     vpc_id = "vpc-0162a2811ed1ab339"
-    instance_name = var.ec2_name
+    instance_name = "ec2-test"
     instance_type = "t2.micro"
     volume_name = "disco-1"
     volume_size = 20

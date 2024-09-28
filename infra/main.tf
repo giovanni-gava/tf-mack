@@ -1,4 +1,4 @@
-module "ec2" {
+module "aws-ec2" {
     source = "../modules/aws-ec2"
     region = var.region
     vpc_id = var.vpc_id

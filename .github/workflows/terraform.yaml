@@ -51,8 +51,7 @@ jobs:
 
       - name: Terraform Init
         run: |
-          cd ../ && ls \
-            - terraform init \
+           cd / && terraform init \
             -backend-config="bucket=${{ inputs.aws-state-s3-bucket }}" \
             -backend-config="key=${{ github.event.repository.name }}" \
             -backend-config="region=${{ inputs.aws-region }}" \

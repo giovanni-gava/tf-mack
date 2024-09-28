@@ -2,7 +2,7 @@ module "ec2" {
     source = "./modules/ec2"
     region = "us-east-1"
     vpc_id = "vpc-0162a2811ed1ab339"
-    instance_name = "aws-ec2-mack-giovanni"
+    instance_name = var.ec2_name
     instance_type = "t2.micro"
     volume_name = "disco-1"
     volume_size = 20

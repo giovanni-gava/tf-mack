@@ -7,3 +7,4 @@ instance_type = "t2.micro"
 sg_name = "meu-sg-prd"
 volume_name = "disco-1"
 volume_size = 20
+
